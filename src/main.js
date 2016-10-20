@@ -1,10 +1,20 @@
 import Vue from 'vue';
-import App from './App';
+import Router from 'vue-router';
+import Resource from 'vue-resource';
+import Validator from 'vue-validator';
 
-/* eslint-disable no-new */
-new Vue({
-  el: 'body',
-  components: { App },
-});
+import App from './App.vue';
+
+Vue.use(Router);
+Vue.use(Resource);
+Vue.use(Validator);
 
 require('../config/_assets.js');
+
+/* eslint-disable no-new */
+const router = new Router({ hashbang: false, history: true });
+import routes from '../config/_routes.js';
+router.map(routes);
+router.start(App, '#root');
+
+export { router };
