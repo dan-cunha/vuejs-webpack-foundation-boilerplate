@@ -1,9 +1,9 @@
 {
-  "name": "ccmd.node",
+  "name": "vuejs-webpack-foundation-boilerplate",
   "version": "1.0.0",
-  "description": "Collectors Corner Website",
+  "description": "VueJS boilerplate for Webpack and Foundation",
   "author": "dancunha@gmail.com",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "node build/dev-server.js",
     "build": "node build/build.js",

@@ -1,7 +1,3 @@
-# ccmd.node
-
-> Collectors Corner Website
-
 ## Build Setup
 
 ``` bash
